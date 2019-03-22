@@ -1,0 +1,33 @@
+Leave Application
+a. login: take empno as login validation parameter
+b. viewAppliedLeaves: display all the views applied by the user
+c. applyLeave: Create a Leave Request, and store the leave details 
+d. cancelLeave: Delete the leave request from the store
+e. viewLeaveSummary: Available Leave Balance, Total number of leaves applied in days
+
+1. Write test cases to create the application with classes and required business operations
+
+LeaveTest		Employee		LeaveRequest	
+setup/teardown		11988   		123	
+login[empno]		Mayuri Bhagat		Family Get-together		
+viewAppliedLeaves	2		
+applyLeave		yes              	2
+cancelLeave		no                      0
+viewLeaveSummary	5
+			2
+2. Create a console application to have the following menu
+	login: [empno] -> 1. View Applied Leaves
+			  2. Apply For Leave
+			  3. Cancel Leave
+			  4. View Leave Summary
+	LeaveApplication: main 
+	login-> empno : 11988 1. View Applied Leaves => Print All the leaves
+			      2. Apply For Leave => REad all inputs using Scanner
+			      3. Cancel Leave => ask for requestID
+			      4. View Leave Summary: Empno,name, availble Leaves, 						current Leave Count
+
+3. Manage the required data and store and retrieve from file
+a. Create a Manager class to read/write the data using Object Stream to the file
+b. Link the Manager to the console, to access data from file on startup
+
+
